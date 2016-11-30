@@ -20,9 +20,55 @@ namespace BuildACalculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
+            
             InitializeComponent();
+        }
+        
+        
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+
+            var TopInput = float.Parse(this.TopInput.Text);
+            var BottomInput = float.Parse(this.BottomInput.Text);
+            var answer = TopInput + BottomInput;
+            this.answer.Content = answer;
+
+        }
+
+        private void Subtrack_Click(object sender, RoutedEventArgs e)
+        {
+            var TopInput = float.Parse(this.TopInput.Text);
+            var BottomInput = float.Parse(this.BottomInput.Text);
+            var answer = TopInput - BottomInput;
+            this.answer.Content = answer;
+        }
+
+        private void Multiply_Click(object sender, RoutedEventArgs e)
+        {
+            var TopInput = float.Parse(this.TopInput.Text);
+            var BottomInput = float.Parse(this.BottomInput.Text);
+            var answer = TopInput * BottomInput;
+            this.answer.Content = answer;
+        }
+
+        private void Divide_Click(object sender, RoutedEventArgs e)
+        {
+            var TopInput = float.Parse(this.TopInput.Text);
+            var BottomInput = float.Parse(this.BottomInput.Text);
+            var answer = TopInput / BottomInput;
+            this.answer.Content = answer;
+        }
+
+        private void Module_Click(object sender, RoutedEventArgs e)
+        {
+            var TopInput = float.Parse(this.TopInput.Text);
+            var BottomInput = float.Parse(this.BottomInput.Text);
+            var answer = TopInput % BottomInput;
+            this.answer.Content = answer;
         }
     }
 }

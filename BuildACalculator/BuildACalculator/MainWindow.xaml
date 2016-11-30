@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:BuildACalculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid AutomationProperties.Name="">
+        <Button x:Name="Add" Content="+" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.197,0.823" Click="Add_Click" FontWeight="Bold"/>
+        <Button x:Name="Subtract" Content="-" HorizontalAlignment="Left" Margin="115,125,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Subtrack_Click"/>
+        <Button x:Name="Multiply" Content="*" HorizontalAlignment="Left" Margin="214,125,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Multiply_Click"/>
+        <Button x:Name="Divide" Content="/" HorizontalAlignment="Left" Margin="315,125,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Divide_Click"/>
+        <Button x:Name="Module" Content="%" HorizontalAlignment="Left" Margin="424,125,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Click="Module_Click"/>
+        <TextBox x:Name="TopInput" HorizontalAlignment="Left" Height="23" Margin="196,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="BottomInput" HorizontalAlignment="Left" Height="23" Margin="196,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="equal" Content="=" HorizontalAlignment="Left" Margin="234,210,0,0" VerticalAlignment="Top" Width="38" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="answer" Content="" HorizontalAlignment="Left" Margin="196,252,0,0" VerticalAlignment="Top" Width="120" AutomationProperties.Name="AnswerBox"/>
+
     </Grid>
 </Window>
