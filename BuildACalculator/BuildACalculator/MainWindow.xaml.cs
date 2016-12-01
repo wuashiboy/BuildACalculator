@@ -63,7 +63,7 @@ namespace BuildACalculator
             this.answer.Content = answer;
         }
 
-        private void Module_Click(object sender, RoutedEventArgs e)
+        private void Modulus_Click(object sender, RoutedEventArgs e)
         {
             var TopInput = float.Parse(this.TopInput.Text);
             var BottomInput = float.Parse(this.BottomInput.Text);
